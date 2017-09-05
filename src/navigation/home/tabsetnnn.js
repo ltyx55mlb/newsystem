@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text,Image,Dimensions,ImageBackground,Button,ScrollView} from 'react-native'
+import {View, Text,ImageBackground,Dimensions,Button,ScrollView} from 'react-native'
 // import Main from '../../modules/Main/mainContainer'
 import List from '../../modules/List/homeContainer'
 
@@ -8,7 +8,7 @@ const SCREEN_HEIGHT = Dimensions.get('window').height;
 
 const MyNav = ({ navigation }) => (
 <ScrollView>
-   <Image
+   <ImageBackground
         source={{url:'http://img1.juimg.com/151216/330715-1512160445568.jpg'}}
         style={{width:SCREEN_WIDTH,height:SCREEN_HEIGHT,backgroundColor:'rgba(0,0,0,0)'}}
     >
@@ -17,7 +17,7 @@ const MyNav = ({ navigation }) => (
       title="Go to a profile screen"
     />
     <Button onPress={() => navigation.goBack(null)} title="Go back" />
-    </Image>  
+    </ImageBackground>  
   </ScrollView>
 ); 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, ScrollView, View, StyleSheet} from 'react-native';
+import { Text, ScrollView, Image, View, StyleSheet} from 'react-native';
 import { ListItem,Avatar} from 'react-native-elements';
 import * as action from "../duck"
 

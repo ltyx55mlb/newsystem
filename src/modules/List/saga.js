@@ -23,7 +23,7 @@ function* loadListsaga(action){
 }
 
 
-export default function* rootHomeSaga() {
+export default function* rootListSaga() {
   yield all([
     takeLatest(homeType.ON_LISTS, loadListsaga)
   ])

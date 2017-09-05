@@ -1,0 +1,464 @@
+// export const chartoption = {
+//   title: {
+//     text: '采购达成率',
+//     top: 3,
+//     left: 8,
+//     textStyle: {
+//       fontSize: 14,
+//       fontWeight: 500,
+//       color: '#333',          // 主标题文字颜色
+//     },
+//   },
+//   tooltip: {
+//     trigger: 'item',
+//     formatter: "产品占比 <br/>{b} : {c} ({d}%)"
+//   },
+//   legend: {
+//     data: ['产品A', '产品B', '产品C', '产品D'],
+//     right: 10,
+//     icon: 'circle',
+//     type: 'scroll',
+//     top: 4,
+//     itemWidth: 8,
+//     itemHeight: 8,
+//     textStyle: {
+//       fontSize: 10,
+//       fontWeight: 'bold'
+//     }
+//   },
+//   alculable: true,
+//   color: ['#ed391e', '#1da646', '#387ef7', '#fdbb00'],
+//   series: [{
+//     type: 'pie',
+//     radius: ['20%', '75%'],
+//     center: ['50%', '58%'],
+//     roseType: 'area',
+//     startAngle: 85,
+//     data:
+//     [
+//       { value: 9999, name: '产品A' },
+//       { value: 8888, name: '产品B' },
+//       { value: 12511, name: '产品C' },
+//       { value: 11231, name: '产品D' },
+//     ]
+//   }]
+// }
+// //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// export const chartoptiona = {
+//   title: {
+//     text: '销售数据',
+//     top: 8,
+//     left: 8,
+//     textStyle: {
+//       fontSize: 14,
+//       fontWeight: 500,
+//       color: '#333',          // 主标题文字颜色
+//     },
+//   },
+//   tooltip: {
+//     trigger: 'axis'
+//   },
+//   grid: {
+//     left: '2%',
+//     top: '20%',
+//     bottom: '5%',
+//     // width: SCREEN_WIDTH - 30,
+//     containLabel: true
+//   },
+//   legend: {
+//     left: 75,
+//     top: 10,
+//     icon: 'circle',
+//     itemWidth: 8,
+//     itemHeight: 8,
+//     textStyle: {
+//       fontSize: 10,
+//       fontWeight: 'bold'
+//     },
+//     data: ['近6个月销售量', '环比销售额', '同比销售额']
+//   },
+//   xAxis: {
+//     type: 'category',
+//     axisTick: { inside: true },
+//     axisLine: {
+//       lineStyle: {
+//         color: '#999999'
+//       }
+//     },
+//     axisLabel: {
+//       textStyle: {
+//         fontSize: 10,
+//         color: '#666'
+//       }
+//     },
+//     boundaryGap: false,
+//     data: ["2月", "3月", "4月", "5月", "6月", "7月", "8月"]
+//   },
+//   yAxis: {
+//     type: "value",
+//     axisTick: { show: false },
+//     axisLine: {
+//       lineStyle: {
+//         color: '#999999'
+//       }
+//     },
+//     axisLabel: {
+//       textStyle: {
+//         fontSize: 10,
+//         color: '#666'
+//       }
+//     },
+//   },
+//   series: [
+//     {
+//       name: '近6个月销售量',
+//       type: 'line',
+//       data: [5, 20, 36, 10, 10, 20, 40],
+//       itemStyle: {
+//         normal: {
+//           color: '#377df7',
+//           lineStyle: {
+//             width: 2,
+//             color: '#377df7'
+//           }
+//         }
+//       }
+//     },
+//     {
+//       name: '环比销售额',
+//       type: 'line',
+//       data: [22, 18, 50, 34, 29, 30, 10],
+//       itemStyle: {
+//         normal: {
+//           color: '#ed381d',
+//           lineStyle: {
+//             width: 2,
+//             color: '#ed381d'
+//           }
+//         }
+//       }
+//     },
+//     {
+//       name: '同比销售额',
+//       type: 'line',
+//       data: [15, 23, 20, 15, 19, 30, 41],
+//       itemStyle: {
+//         normal: {
+//           color: '#fdbb00',
+//           lineStyle: {
+//             width: 2,
+//             color: '#fdbb00'
+//           }
+//         }
+//       }
+//     },
+//   ]
+// }
+// //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// export const chartoptionhuan = {
+//   color: ['#387ef7', '#fdbb00'],
+//   series: [
+//     {
+//       name: '访问来源',
+//       type: 'pie',
+//       radius: ['40%', '80%'],
+//       startAngle: 120,
+//       avoidLabelOverlap: false,
+//       hoverAnimation: false,
+//       center: ['50%', '50%'],
+//       labelLine: {
+//         normal: {
+//           show: false
+//         }
+//       },
+//       label: {
+//         normal: {
+//           show: false
+//         }
+//       },
+//       data: [
+//         { value: 63, name: '健康' },
+//         { value: 37, name: '滞销' },
+
+//       ]
+//     }
+//   ]
+// }
+
+
+
+// //////////
+{
+    "option": {
+        "title": {
+            "text": "采购达成率",
+            "top": 3,
+            "left": 8,
+            "textStyle": {
+                "fontSize": 14,
+                "fontWeight": 500,
+                "color": "#333" // 主标题文字颜色
+            }
+        },
+        "tooltip": {
+            "trigger": "item",
+            "formatter": "产品占比 <br/>{b} : {c} ({d}%)"
+        },
+        "legend": {
+            "data": 
+            [
+                "产品A",
+                "产品B",
+                "产品C",
+                "产品D"
+            ],
+
+            "right": 10,
+            "icon": "circle",
+            "type": "scroll",
+            "top": 4,
+            "itemWidth": 8,
+            "itemHeight": 8,
+            "textStyle": {
+                "fontSize": 10,
+                "fontWeight": "bold"
+            }
+        },
+        "alculable": true,
+        "color": [
+            "#ed391e",
+            "#1da646",
+            "#387ef7",
+            "#fdbb00"
+        ],
+        "series": [
+            {
+                "type": "pie",
+                "radius": [
+                    "20%",
+                    "75%"
+                ],
+                "center": [
+                    "50%",
+                    "58%"
+                ],
+                "roseType": "area",
+                "startAngle": 85,
+                "data": 
+                [
+                    {
+                        "value": 9999,
+                        "name": "产品A"
+                    },
+                    {
+                        "value": 8888,
+                        "name": "产品B"
+                    },
+                    {
+                        "value": 12511,
+                        "name": "产品C"
+                    },
+                    {
+                        "value": 11231,
+                        "name": "产品D"
+                    }
+                ]
+            }
+        ]
+    },
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    "optiona": {
+        "title": {
+            "text": "销售数据",
+            "top": 8,
+            "left": 8,
+            "textStyle": {
+                "fontSize": 14,
+                "fontWeight": 500,
+                "color": "#333" // 主标题文字颜色
+            }
+        },
+        "tooltip": {
+            "trigger": "axis"
+        },
+        "grid": {
+            "left": "2%",
+            "top": "20%",
+            "bottom": "5%",
+            // "width": SCREEN_WIDTH -30,
+            "containLabel": true
+        },
+        "legend": {
+            "left": 75,
+            "top": 10,
+            "icon": "circle",
+            "itemWidth": 8,
+            "itemHeight": 8,
+            "textStyle": {
+                "fontSize": 10,
+                "fontWeight": "bold"
+            },
+            "data": [
+                "近6个月销售量",
+                "环比销售额",
+                "同比销售额"
+            ]
+        },
+        "xAxis": {
+            "type": "category",
+            "axisTick": {
+                "inside": true
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "color": "#999999"
+                }
+            },
+            "axisLabel": {
+                "textStyle": {
+                    "fontSize": 10,
+                    "color": " #666"
+                }
+            },
+            "boundaryGap": false,
+            "data": [
+                "2月",
+                "3月",
+                "4月",
+                "5月",
+                "6月",
+                "7月",
+                "8月"
+            ]
+        },
+        "yAxis": {
+            "type": "value",
+            "axisTick": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "color": "#999999"
+                }
+            },
+            "axisLabel": {
+                "textStyle": {
+                    "fontSize": 10,
+                    "color": "#666"
+                }
+            }
+        },
+        "series": [
+            {
+                "name": "近6个月销售量",
+                "type": "line",
+                "data": [
+                    5,
+                    20,
+                    36,
+                    10,
+                    10,
+                    20,
+                    40
+                ],
+                "itemStyle": {
+                    "normal": {
+                        "color": "#377df7",
+                        "lineStyle": {
+                            "width": 2,
+                            "color": "#377df7"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "环比销售额",
+                "type": "line",
+                "data": [
+                    22,
+                    18,
+                    50,
+                    34,
+                    29,
+                    30,
+                    10
+                ],
+                "itemStyle": {
+                    "normal": {
+                        "color": "#ed381d",
+                        "lineStyle": {
+                            "width": 2,
+                            "color": "#ed381d"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "同比销售额",
+                "type": "line",
+                "data": [
+                    15,
+                    23,
+                    20,
+                    15,
+                    19,
+                    30,
+                    41
+                ],
+                "itemStyle": {
+                    "normal": {
+                        "color": "#fdbb00",
+                        "lineStyle": {
+                            "width": 2,
+                            "color": " #fdbb00"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    "optionhuan": {
+        "color": [
+            "#387ef7",
+            "#fdbb00"
+        ],
+        "series": [
+            {
+                "name": "访问来源",
+                "type": "pie",
+                "radius": [
+                    "40%",
+                    "80%"
+                ],
+                "startAngle": 120,
+                "avoidLabelOverlap": false,
+                "hoverAnimation": false,
+                "center": [
+                    "50%",
+                    "50%"
+                ],
+                "labelLine": {
+                    "normal": {
+                        "show": false
+                    }
+                },
+                "label": {
+                    "normal": {
+                        "show": false
+                    }
+                },
+                "data": [
+                    {
+                        "value": 63,
+                        "name": "健康"
+                    },
+                    {
+                        "value": 37,
+                        "name": "滞销"
+                    }
+                ]
+            }
+        ]
+    }
+}

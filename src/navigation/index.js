@@ -61,7 +61,7 @@ const MainRoot = DrawerNavigator(
     // }
   },
   {
-    initialRouteName: 'MyBlack',
+    initialRouteName: 'Payment',
     contentOptions: {
       activeTintColor: '#548ff7',
       activeBackgroundColor: 'transparent',

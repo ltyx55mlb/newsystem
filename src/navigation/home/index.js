@@ -65,14 +65,14 @@ const SettingTab = StackNavigator({
     path: '/',
     navigationOptions: ({ navigation }) => ({
       title: 'Settings',
-      tabBarIcon: ({ tintColor, focused }) => (
-          <Icon
-            name={focused ? 'emoticon-cool' : 'emoticon-neutral'}
-            size={30}
-            type="material-community"
-            color={tintColor}
-          />
-        ),
+      // tabBarIcon: ({ tintColor, focused }) => (
+      //     <Icon
+      //       name={focused ? 'emoticon-cool' : 'emoticon-neutral'}
+      //       size={30}
+      //       type="material-community"
+      //       color={tintColor}
+      //     />
+      //   ),
       headerLeft: (
         <Icon
           name="menu"
